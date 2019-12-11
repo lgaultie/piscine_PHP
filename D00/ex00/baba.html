@@ -2,32 +2,75 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>B.A.B.A.</title>
+		<title>B.A.BA</title>
 		<style>
 			body
 			{
-				background-color:pink;
+				background-color: pink;
 			}
-			h1
+			.title
 			{
-				color:white;
+				color: white;
 				text-align: center;
+			}
+			.images
+			{
+				text-align: center;
+			}
+			.hp, .jdg
+			{
+				margin-left: auto;
+				margin-right: auto;
+				width: 200px;
+				height: 200px;
+			}
+			figure
+			{
+				display: inline-block;
+/* By default img, tags have an inline-block display property on them which causes
+them to appear as they are written in HTML i.e. if in between 2 <img /> tags,
+there is a white-space (new line character / space / tab) the 2 images will
+appear side by side but with a space of one white-space character between them. */
+				margin: 0;
+			}
+
+			p.footer
+			{
+				text-align: right;
+				font-style: italic;
+				font-family: "Courier New", monospace;
 			}
 		</style>
 	</head>
 
 	<body>
 		<div class="title">
-			<h1>éééééhooo</h1>
+			<h1>
+				par ici les pépétes
+			</h1>
 		</div>
 		<div class="images">
-			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDv5rwUFZo7W74eUcU_3hrpiZbnzQdawxw_VL6lTmSwoITJxQcJw&s">
-			<br>
-			<a href="https://wizardingworld.warnerbros.fr/store/vetements">Harry Potter</a>
-			<br>
-			<img src="https://s3.eu-central-1.amazonaws.com/balibart-s3/Shops/5ab3eacdad31ae378d930733/theme/logo.png">
-			<br>
-			<a href="https://joueurdugrenier.niceshop.co/">Joueur du Grenier</a>
+			<figure>
+				<img class="hp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDv5rwUFZo7W74eUcU_3hrpiZbnzQdawxw_VL6lTmSwoITJxQcJw&s">
+				<br>
+				<a href="https://wizardingworld.warnerbros.fr/store/vetements">
+					Harry Potter
+				</a>
+			</figure>
+			<figure>
+				<br>
+				<img class="jdg" src="https://s3.eu-central-1.amazonaws.com/balibart-s3/Shops/5ab3eacdad31ae378d930733/theme/logo.png">
+				<br>
+				<a href="https://joueurdugrenier.niceshop.co/">
+					Joueur du Grenier
+				</a>
+			</figure>
 		</div>
+		<footer>
+		<hr>
+			<p class="footer">
+				©lgaultie 2020
+			</p>
+		</footer>
 	</body>
 </html>
