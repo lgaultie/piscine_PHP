@@ -65,12 +65,18 @@
 				background: brown;
 				color: white;
 			}
-			/* .left
-			{
+			.bottomleft {
+			  display: block;
+			  text-align: left;
+			  vertical-align: bottom;
+			  font-size: 15px;
 			}
-			.right
-			{
-			} */
+			.upright {
+			  display: block;
+			  text-align: right;
+			  vertical-align: top;
+			  font-size: 15px;
+			}
 		</style>
 	</head>
 	<body>
@@ -80,7 +86,12 @@
 			<!-- <tr> </tr>: indique le début et la fin d'une ligne du tableau ;
 			<td> </td>: indique le début et la fin du contenu d'une cellule. -->
 			<tr>
-				<td class = "green">H</td>
+				<!-- <td class = "green"><th>1</th>H</td> -->
+				<td class = "green">
+					<div class="bottomleft">1</div>
+					<div>H</div>
+					<div class="upright">1.0</div>
+				</td>
 				<td></td>
 				<td></td>
 				<td></td>
@@ -97,11 +108,23 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				<td class="blue">He</td>
+				<td class="blue">
+					<div class="bottomleft">2</div>
+					<div>He</div>
+					<div class="upright">4.0</div>
+				</td>
 			</tr>
 			<tr>
-				<td class="red">Li</td>
-				<td class="purple">Be</td>
+				<td class="red">
+					<div class="bottomleft">3</div>
+					<div>Li</div>
+					<div class="upright">6.9</div>
+				</td>
+				<td class="purple">
+					<div class="bottomleft">4</div>
+					<div>Be</div>
+					<div class="upright">9.0</div>
+				</td>
 				<td></td>
 				<td></td>
 				<td></td>
@@ -112,16 +135,48 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				<td class="green">B</td>
-				<td class="green">C</td>
-				<td class="green">N</td>
-				<td class="green">O</td>
-				<td class="yellow">F</td>
-				<td class="blue">Ne</td>
+				<td class="green">
+					<div class="bottomleft">5</div>
+					<div>B</div>
+					<div class="upright">10.8</div>
+				</td>
+				<td class="green">
+					<div class="bottomleft">6</div>
+					<div>C</div>
+					<div class="upright">12.0</div>
+				</td>
+				<td class="green">
+					<div class="bottomleft">7</div>
+					<div>N</div>
+					<div class="upright">14.0</div>
+				</td>
+				<td class="green">
+					<div class="bottomleft">8</div>
+					<div>O</div>
+					<div class="upright">16.0</div>
+				</td>
+				<td class="yellow">
+					<div class="bottomleft">9</div>
+					<div>F</div>
+					<div class="upright">19.0</div>
+				</td>
+				<td class="blue">
+					<div class="bottomleft">10</div>
+					<div>Ne</div>
+					<div class="upright">20.2</div>
+				</td>
 			</tr>
 			<tr>
-				<td class="red">Na</td>
-				<td class="purple">Mg</td>
+				<td class="red">
+					<div class="bottomleft">11</div>
+					<div>Na</div>
+					<div class="upright">23.0</div>
+				</td>
+				<td class="purple">
+					<div class="bottomleft">12</div>
+					<div>Mg</div>
+					<div class="upright">24.3</div>
+				</td>
 				<td></td>
 				<td></td>
 				<td></td>
@@ -132,130 +187,556 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				<td class="grey">Al</td>
-				<td class="green">Si</td>
-				<td class="green">P</td>
-				<td class="green">S</td>
-				<td class="yellow">Ci</td>
-				<td class="blue">Ar</td>
+				<td class="grey">
+					<div class="bottomleft">13</div>
+					<div>Al</div>
+					<div class="upright">27.0</div>
+				</td>
+				<td class="green">
+					<div class="bottomleft">14</div>
+					<div>Si</div>
+					<div class="upright">28.1</div>
+				</td>
+				<td class="green">
+					<div class="bottomleft">15</div>
+					<div>P</div>
+					<div class="upright">31.0</div>
+				</td>
+				<td class="green">
+					<div class="bottomleft">16</div>
+					<div>S</div>
+					<div class="upright">32.1</div>
+				</td>
+				<td class="yellow">
+					<div class="bottomleft">17</div>
+					<div>CI</div>
+					<div class="upright">35.5</div>
+				</td>
+				<td class="blue">
+					<div class="bottomleft">18</div>
+					<div>Ar</div>
+					<div class="upright">39.9</div>
+				</td>
 			</tr>
 			<tr>
-				<td class="red">K</td>
-				<td class="purple">Ca</td>
-				<td class="pink">Sc</td>
-				<td class="pink">Ti</td>
-				<td class="pink">V</td>
-				<td class="pink">Cr</td>
-				<td class="pink">Mn</td>
-				<td class="pink">Fe</td>
-				<td class="pink">Co</td>
-				<td class="pink">Ni</td>
-				<td class="pink">Cu</td>
-				<td class="pink">Zn</td>
-				<td class="grey">Ga</td>
-				<td class="grey">Ge</td>
-				<td class="green">As</td>
-				<td class="green">Se</td>
-				<td class="yellow">Br</td>
-				<td class="blue">Kr</td>
+				<td class="red">
+					<div class="bottomleft">19</div>
+					<div>K</div>
+					<div class="upright">39.1</div>
+				</td>
+				<td class="purple">
+					<div class="bottomleft">20</div>
+					<div>Ca</div>
+					<div class="upright">40.1</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">21</div>
+					<div>Sc</div>
+					<div class="upright">45.0</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">22</div>
+					<div>Ti</div>
+					<div class="upright">47.9</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">23</div>
+					<div>V</div>
+					<div class="upright">50.9</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">24</div>
+					<div>Cr</div>
+					<div class="upright">51.0</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">25</div>
+					<div>Mn</div>
+					<div class="upright">54.9</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">26</div>
+					<div>Fe</div>
+					<div class="upright">55.8</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">27</div>
+					<div>Co</div>
+					<div class="upright">58.9</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">28</div>
+					<div>Ni</div>
+					<div class="upright">63.5</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">29</div>
+					<div>Cu</div>
+					<div class="upright">63.5</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">30</div>
+					<div>Zn</div>
+					<div class="upright">65.4</div>
+				</td>
+				<td class="grey">
+					<div class="bottomleft">31</div>
+					<div>Ga</div>
+					<div class="upright">69.7</div>
+				</td>
+				<td class="grey">
+					<div class="bottomleft">32</div>
+					<div>Ge</div>
+					<div class="upright">72.6</div>
+				</td>
+				<td class="green">
+					<div class="bottomleft">33</div>
+					<div>As</div>
+					<div class="upright">74.5</div>
+				</td>
+				<td class="green">
+					<div class="bottomleft">34</div>
+					<div>Se</div>
+					<div class="upright">79.0</div>
+				</td>
+				<td class="yellow">
+					<div class="bottomleft">35</div>
+					<div>Br</div>
+					<div class="upright">79.9</div>
+				</td>
+				<td class="blue">
+					<div class="bottomleft">36</div>
+					<div>Kr</div>
+					<div class="upright">83.8</div>
+				</td>
 			</tr>
 			<tr>
-				<td class="red">Rb</td>
-				<td class="purple">Sr</td>
-				<td class="pink">Y</td>
-				<td class="pink">Zr</td>
-				<td class="pink">Nb</td>
-				<td class="pink">Mo</td>
-				<td class="pink">Tc</td>
-				<td class="pink">Ru</td>
-				<td class="pink">Rh</td>
-				<td class="pink">Pd</td>
-				<td class="pink">Ag</td>
-				<td class="pink">Cd</td>
-				<td class="grey">In</td>
-				<td class="grey">Sn</td>
-				<td class="grey">Sb</td>
-				<td class="green">Te</td>
-				<td class="yellow">I</td>
-				<td class="blue">Xe</td>
+				<td class="red">
+					<div class="bottomleft">37</div>
+					<div>Rb</div>
+					<div class="upright">85.5</div>
+				</td>
+				<td class="purple">
+					<div class="bottomleft">38</div>
+					<div>Sr</div>
+					<div class="upright">87.6</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">39</div>
+					<div>Y</div>
+					<div class="upright">88.9</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">40</div>
+					<div>Zr</div>
+					<div class="upright">91.3</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">41</div>
+					<div>Nb</div>
+					<div class="upright">92.9</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">42</div>
+					<div>Mo</div>
+					<div class="upright">95.9</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">43</div>
+					<div>Tc</div>
+					<div class="upright">99.0</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">44</div>
+					<div>Ru</div>
+					<div class="upright">101.1</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">45</div>
+					<div>Rh</div>
+					<div class="upright">102.9</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">46</div>
+					<div>Pd</div>
+					<div class="upright">106.4</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">47</div>
+					<div>Ag</div>
+					<div class="upright">107.9</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">48</div>
+					<div>Cd</div>
+					<div class="upright">112.4</div>
+				</td>
+				<td class="grey">
+					<div class="bottomleft">49</div>
+					<div>In</div>
+					<div class="upright">114.8</div>
+				</td>
+				<td class="grey">
+					<div class="bottomleft">50</div>
+					<div>Sn</div>
+					<div class="upright">118.7</div>
+				</td>
+				<td class="grey">
+					<div class="bottomleft">51</div>
+					<div>Sb</div>
+					<div class="upright">121.8</div>
+				</td>
+				<td class="green">
+					<div class="bottomleft">52</div>
+					<div>Te</div>
+					<div class="upright">127.6</div>
+				</td>
+				<td class="yellow">
+					<div class="bottomleft">53</div>
+					<div>I</div>
+					<div class="upright">126.9</div>
+				</td>
+				<td class="blue">
+					<div class="bottomleft">54</div>
+					<div>Xe</div>
+					<div class="upright">131.3</div>
+				</td>
 			</tr>
 			<tr>
-				<td class="red">Cs</td>
-				<td class="purple">Ba</td>
+				<td class="red">
+					<div class="bottomleft">55</div>
+					<div>Cs</div>
+					<div class="upright">132.9</div>
+				</td>
+				<td class="purple">
+					<div class="bottomleft">56</div>
+					<div>Ba</div>
+					<div class="upright">137.3</div>
+				</td>
 				<td></td>
-				<td class="pink">Hf</td>
-				<td class="pink">Ta</td>
-				<td class="pink">W</td>
-				<td class="pink">Re</td>
-				<td class="pink">Os</td>
-				<td class="pink">Ir</td>
-				<td class="pink">Pt</td>
-				<td class="pink">Au</td>
-				<td class="pink">Hg</td>
-				<td class="grey">TI</td>
-				<td class="grey">Pb</td>
-				<td class="grey">Bi</td>
-				<td class="grey">Po</td>
-				<td class="yellow">At</td>
-				<td class="blue">Rn</td>
+				<td class="pink">
+					<div class="bottomleft">72</div>
+					<div>Hf</div>
+					<div class="upright">178.5</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">73</div>
+					<div>Ta</div>
+					<div class="upright">180.9</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">74</div>
+					<div>W</div>
+					<div class="upright">183.9</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">75</div>
+					<div>Re</div>
+					<div class="upright">186.2</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">76</div>
+					<div>Os</div>
+					<div class="upright">190.2</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">77</div>
+					<div>Ir</div>
+					<div class="upright">192.2</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">78</div>
+					<div>Pt</div>
+					<div class="upright">195.1</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">79</div>
+					<div>Au</div>
+					<div class="upright">197.0</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">80</div>
+					<div>Hg</div>
+					<div class="upright">200.6</div>
+				</td>
+				<td class="grey">
+					<div class="bottomleft">81</div>
+					<div>TI</div>
+					<div class="upright">204.4</div>
+				</td>
+				<td class="grey">
+					<div class="bottomleft">82</div>
+					<div>Pb</div>
+					<div class="upright">207.2</div>
+				</td>
+				<td class="grey">
+					<div class="bottomleft">83</div>
+					<div>Bi</div>
+					<div class="upright">209.0</div>
+				</td>
+				<td class="grey">
+					<div class="bottomleft">84</div>
+					<div>Po</div>
+					<div class="upright">210</div>
+				</td>
+				<td class="yellow">
+					<div class="bottomleft">85</div>
+					<div>At</div>
+					<div class="upright">210</div>
+				</td>
+				<td class="blue">
+					<div class="bottomleft">86</div>
+					<div>Rn</div>
+					<div class="upright">222</div>
+				</td>
 			</tr>
 			<tr>
-				<td class="red">Fr</td>
-				<td class="purple">Ra</td>
+				<td class="red">
+					<div class="bottomleft">87</div>
+					<div>Fr</div>
+					<div class="upright">223</div>
+				</td>
+				<td class="purple">
+					<div class="bottomleft">88</div>
+					<div>Ra</div>
+					<div class="upright">226</div>
+				</td>
 				<td></td>
-				<td class="pink">Rf</td>
-				<td class="pink">Db</td>
-				<td class="pink">Sg</td>
-				<td class="pink">Bh</td>
-				<td class="pink">Hs</td>
-				<td class="pink">Mt</td>
-				<td class="pink">Ds</td>
-				<td class="pink">Rg</td>
-				<td class="pink">Cn</td>
-				<td class="grey">Uut</td>
-				<td class="grey">Uuq</td>
-				<td class="grey">Uup</td>
-				<td class="grey">Uuh</td>
-				<td class="yellow">Uus</td>
-				<td class="blue">Uuo</td>
+				<td class="pink">
+					<div class="bottomleft">104</div>
+					<div>Rf</div>
+					<div class="upright">267</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">105</div>
+					<div>Db</div>
+					<div class="upright">268</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">106</div>
+					<div>Sg</div>
+					<div class="upright">271</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">107</div>
+					<div>Bh</div>
+					<div class="upright">272</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">108</div>
+					<div>Hs</div>
+					<div class="upright">270</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">109</div>
+					<div>Mt</div>
+					<div class="upright">276</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">110</div>
+					<div>Ds</div>
+					<div class="upright">281</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">111</div>
+					<div>Rg</div>
+					<div class="upright">280</div>
+				</td>
+				<td class="pink">
+					<div class="bottomleft">112</div>
+					<div>Cn</div>
+					<div class="upright">285</div>
+				</td>
+				<td class="grey">
+					<div class="bottomleft">113</div>
+					<div>Uut</div>
+					<div class="upright">284</div>
+				</td>
+				<td class="grey">
+					<div class="bottomleft">114</div>
+					<div>Uuq</div>
+					<div class="upright">289</div>
+				</td>
+				<td class="grey">
+					<div class="bottomleft">115</div>
+					<div>Uup</div>
+					<div class="upright">288</div>
+				</td>
+				<td class="grey">
+					<div class="bottomleft">116</div>
+					<div>Uuh</div>
+					<div class="upright">293</div>
+				</td>
+				<td class="yellow">
+					<div class="bottomleft">117</div>
+					<div>Uus</div>
+					<div class="upright">294</div>
+				</td>
+				<td class="blue">
+					<div class="bottomleft">118</div>
+					<div>Uuo</div>
+					<div class="upright">294</div>
+				</td>
 			</tr>
 			<tr>
 				<td></td>
 				<td></td>
-				<td class="cyan">La</td>
-				<td class="cyan">Ce</td>
-				<td class="cyan">Pr</td>
-				<td class="cyan">Nd</td>
-				<td class="cyan">Pm</td>
-				<td class="cyan">Sm</td>
-				<td class="cyan">Eu</td>
-				<td class="cyan">Gd</td>
-				<td class="cyan">Tb</td>
-				<td class="cyan">Dy</td>
-				<td class="cyan">Ho</td>
-				<td class="cyan">Er</td>
-				<td class="cyan">Tm</td>
-				<td class="cyan">Yb</td>
-				<td class="cyan">Lu</td>
+				<td class="cyan">
+					<div class="bottomleft">57</div>
+					<div>La</div>
+					<div class="upright">138.9</div>
+				</td>
+				<td class="cyan">
+					<div class="bottomleft">58</div>
+					<div>Ce</div>
+					<div class="upright">140.1</div>
+				</td>
+				<td class="cyan">
+					<div class="bottomleft">59</div>
+					<div>Pr</div>
+					<div class="upright">140.9</div>
+				</td>
+				<td class="cyan">
+					<div class="bottomleft">60</div>
+					<div>Nd</div>
+					<div class="upright">144.2</div>
+				</td>
+				<td class="cyan">
+					<div class="bottomleft">61</div>
+					<div>Pm</div>
+					<div class="upright">145</div>
+				</td>
+				<td class="cyan">
+					<div class="bottomleft">62</div>
+					<div>Sm</div>
+					<div class="upright">150.4</div>
+				</td>
+				<td class="cyan">
+					<div class="bottomleft">63</div>
+					<div>Eu</div>
+					<div class="upright">152.0</div>
+				</td>
+				<td class="cyan">
+					<div class="bottomleft">64</div>
+					<div>Gd</div>
+					<div class="upright">157.3</div>
+				</td>
+				<td class="cyan">
+					<div class="bottomleft">65</div>
+					<div>Tb</div>
+					<div class="upright">158.9</div>
+				</td>
+				<td class="cyan">
+					<div class="bottomleft">66</div>
+					<div>Dy</div>
+					<div class="upright">162.9</div>
+				</td>
+				<td class="cyan">
+					<div class="bottomleft">67</div>
+					<div>Ho</div>
+					<div class="upright">164.9</div>
+				</td>
+				<td class="cyan">
+					<div class="bottomleft">68</div>
+					<div>Er</div>
+					<div class="upright">167.3</div>
+				</td>
+				<td class="cyan">
+					<div class="bottomleft">69</div>
+					<div>Tm</div>
+					<div class="upright">168.9</div>
+				</td>
+				<td class="cyan">
+					<div class="bottomleft">70</div>
+					<div>Yb</div>
+					<div class="upright">173.0</div>
+				</td>
+				<td class="cyan">
+					<div class="bottomleft">71</div>
+					<div>Lu</div>
+					<div class="upright">175.0</div>
+				</td>
 				<td></td>
 			</tr>
 			<tr>
 				<td></td>
 				<td></td>
-				<td class="brown">Ac</td>
-				<td class="brown">Th</td>
-				<td class="brown">Pa</td>
-				<td class="brown">U</td>
-				<td class="brown">Np</td>
-				<td class="brown">Am</td>
-				<td class="brown">Cm</td>
-				<td class="brown">Bk</td>
-				<td class="brown">Cf</td>
-				<td class="brown">Es</td>
-				<td class="brown">Fm</td>
-				<td class="brown">Md</td>
-				<td class="brown">No</td>
-				<td class="brown">Lw</td>
+				<td class="brown">
+					<div class="bottomleft">89</div>
+					<div>Ac</div>
+					<div class="upright">227</div>
+				</td>
+				<td class="brown">
+					<div class="bottomleft">90</div>
+					<div>Th</div>
+					<div class="upright">232</div>
+				</td>
+				<td class="brown">
+					<div class="bottomleft">91</div>
+					<div>Pa</div>
+					<div class="upright">231</div>
+				</td>
+				<td class="brown">
+					<div class="bottomleft">92</div>
+					<div>U</div>
+					<div class="upright">238</div>
+				</td>
+				<td class="brown">
+					<div class="bottomleft">93</div>
+					<div>Np</div>
+					<div class="upright">237</div>
+				</td>
+				</td>
+				<td class="brown">
+					<div class="bottomleft">94</div>
+					<div>Pu</div>
+					<div class="upright">244</div>
+				</td>
+				<td class="brown">
+					<div class="bottomleft">95</div>
+					<div>Am</div>
+					<div class="upright">243</div>
+				</td>
+				<td class="brown">
+					<div class="bottomleft">96</div>
+					<div>Cm</div>
+					<div class="upright">247</div>
+				</td>
+				<td class="brown">
+					<div class="bottomleft">97</div>
+					<div>Bk</div>
+					<div class="upright">247</div>
+				</td>
+				<td class="brown">
+					<div class="bottomleft">98</div>
+					<div>Cf</div>
+					<div class="upright">251</div>
+				</td>
+				<td class="brown">
+					<div class="bottomleft">99</div>
+					<div>Es</div>
+					<div class="upright">254</div>
+				</td>
+				<td class="brown">
+					<div class="bottomleft">100</div>
+					<div>Fm</div>
+					<div class="upright">253</div>
+				</td>
+				<td class="brown">
+					<div class="bottomleft">101</div>
+					<div>Md</div>
+					<div class="upright">256</div>
+				</td>
+				<td class="brown">
+					<div class="bottomleft">102</div>
+					<div>No</div>
+					<div class="upright">254</div>
+				</td>
+				<td class="brown">
+					<div class="bottomleft">103</div>
+					<div>lw</div>
+					<div class="upright">257</div>
+				</td>
 				<td></td>
 				<td></td>
 			</tr>
