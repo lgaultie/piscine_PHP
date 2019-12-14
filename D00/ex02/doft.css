@@ -1,0 +1,40 @@
+body
+{
+	background: #505050;
+}
+header
+{
+	background: #909090;
+	width : 70%;
+	margin-left: auto;
+	margin-right: auto;
+	/*border-radius: accepte 4 valeurs pour l'arrondissement de chaque coins. On peut n'en indiquer que 2, qui correspondront aux coins opposés*/
+	border-radius:10px 10px;
+	/* box-shadow: 1/ décalage horizontal vers la droite, 2/ décalage vertical vers le bas, 3/ force du dégradé, 4/la couleur */
+	box-shadow: 8px 8px 3px black;
+}
+.logo
+{
+	margin-left: 10px;
+	max-width: 40%;
+	height: auto;
+}
+.reload
+{
+	max-width: 2%;
+	height: auto;
+	float: right;
+}
+.close
+{
+	max-width: 91%;
+	height: auto;
+	float: right;
+}
+
+.loup
+{
+	max-width: 20%;
+	height: auto;
+	float: right;
+}
