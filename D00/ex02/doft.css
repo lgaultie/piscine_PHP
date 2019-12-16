@@ -144,8 +144,8 @@ header
 
 #tool{
 	position: absolute;
-	top: 240px;
-	left: 40px;
+	top: 250px;
+	left: 45px;
 	width: 70px;
 	height: auto;
 }
@@ -191,14 +191,16 @@ strong
 	background: #ffffff;
 	float: left;
 }
-#answer
+#button
 {
+	font-size: 12px;
 	border-radius:3px 3px;
 	position: absolute;
 	top: 80px;
 	background: #ffffff;
-	border:1px solid black;
+	border:1px solid grey;
 	width: 70px;
+	height: 23px;
 	margin-left: 370px;
 	float: left;
 }
