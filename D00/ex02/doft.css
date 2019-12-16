@@ -16,9 +16,7 @@ header
 	margin: auto;
 	width: 1420px;
 	height: 137px;
-	/*border-radius: accepte 4 valeurs pour l'arrondissement de chaque coins. On peut n'en indiquer que 2, qui correspondront aux coins opposés*/
 	border-radius:10px 10px;
-	/* box-shadow: 1/ décalage horizontal vers la droite, 2/ décalage vertical vers le bas, 3/ force du dégradé, 4/la couleur */
 	box-shadow: 10px 10px 10px black;
 	background: #909090;
 }
@@ -51,9 +49,6 @@ header
 	right: 10px;
 	bottom: 10px;
 }
-
-/* /////////////////////////////////////////////// */
-
 #left {
 	position: relative;
 	height: 450px;
@@ -92,7 +87,7 @@ header
 	position: relative;
 	top: -70px;
 	width: 460px;
-	height: 130px;
+	height: 160px;
 	border-radius:10px 10px;
 	box-shadow: 10px 10px 10px black;
 	background: #88ff89;
@@ -138,6 +133,8 @@ header
 	height: auto;
 }
 #eye{
+	border:5px solid red;
+	border-radius: 9px 9px;
 	position: absolute;
 	top: 160px;
 	left: 40px;
@@ -170,7 +167,7 @@ header
 }
 p{
 	font-size: 15px;
-	text-align: left;
+	margin-left: 10px;
 	line-height: 20px;
 	font-family: Verdana;
 }
@@ -181,5 +178,27 @@ em
 }
 strong
 {
-	text-shadow: 5px 5px 2px red;
+	text-shadow: .3em .3em .3em red;
+}
+#input
+{
+	border:1px inset black;
+	top: 80px;
+	margin-left: 10px;
+	position: absolute;
+	height: 20px;
+	width: 350px;
+	background: #ffffff;
+	float: left;
+}
+#answer
+{
+	border-radius:3px 3px;
+	position: absolute;
+	top: 80px;
+	background: #ffffff;
+	border:1px solid black;
+	width: 70px;
+	margin-left: 370px;
+	float: left;
 }
