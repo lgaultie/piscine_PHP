@@ -7,15 +7,17 @@ body{
 }
 table
 {
-	width: 80%;
+	width: 100%;
 }
 td
 {
-	height: 80px;
+	position: relative;
+	height: 100px;
 	width: 5%;
 	text-align: center;
 	font-family: "Courier New", monospace;
-	font-size: 40px;
+	/* Viewport is the browser window size. 1vw = 1% of viewport width. */
+	font-size: 2vw;
 }
 .green
 {
@@ -59,12 +61,14 @@ td
 	color: white;
 }
 .bottomleft {
-	text-align: left;
-	vertical-align: bottom;
-	font-size: 15px;
+	position: absolute;
+	left: 3px;
+	bottom: 3px;
+	font-size: .8vw;
 }
 .upright {
-	text-align: right;
-	vertical-align: top;
-	font-size: 15px;
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	font-size: .8vw;
 }
