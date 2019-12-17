@@ -79,7 +79,7 @@ header
 	border-radius:10px 10px;
 	box-shadow: 10px 10px 10px black;
 	background: #909090;
-	margin-top: 25px;
+	margin-top: 30px;
 	float:left;
 }
 
@@ -164,6 +164,24 @@ header
 	left: 10px;
 	width: 930px;
 	height: 560px;
+}
+#to_ikea{
+	position: absolute;
+	top: 500px;
+	left: 540px;
+	width: 130px;
+	height: 230px;
+	opacity: 0;
+	background: #ffffff;
+}
+#to_apple{
+	position: absolute;
+	top: 488px;
+	left: 960px;
+	width: 200px;
+	height: 170px;
+	opacity: 0;
+	background: #ffffff;
 }
 p{
 	font-size: 15px;
