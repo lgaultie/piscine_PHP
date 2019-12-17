@@ -1,0 +1,58 @@
+#menu
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-family: Arial;
+	text-align: center;
+	color: white;
+}
+.sous
+{
+	position: absolute;
+	padding: 0;
+	list-style: none;
+	display: none;
+	border-radius:3px;
+	width: 200px;
+	height: 60px;
+}
+.sandwich:hover .sous
+{
+	display: block;
+	background:linear-gradient(#35477d, #c06c84);
+}
+.dessert:hover .sous
+{
+	display: block;
+	background:linear-gradient(#6c567b, #c06c84);
+}
+.drink:hover .sous
+{
+	background:linear-gradient(#f67280, #f8b195);
+	display: block;
+}
+.sandwich
+{
+	width: 200px;
+	display: inline-block;
+	background: #35477d;
+	border-radius:3px;
+	height: 20px;
+}
+.dessert
+{
+	width: 200px;
+	display: inline-block;
+	background: #6c567b;
+	border-radius:3px;
+	height: 20px;
+}
+.drink
+{
+	width: 200px;
+	display: inline-block;
+	background-color: #f67280;
+	border-radius:3px;
+	height: 20px;
+}
